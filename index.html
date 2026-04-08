@@ -7,8 +7,26 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <h1>🎬 Movie List</h1>
+    <div style="display: flex; justify-content: space-between; align-items: center; max-width: 800px; margin: 0 auto;">
+        <h1>🎬 Movie List</h1>
+        <button id="themeToggle" class="theme-btn">☀️ Light Mode</button>
+    </div>
+    <div id="controls">
+        <input type="text" id="searchInput" placeholder="Search movies...">
+        <select id="typeFilter">
+            <option value="all">All Types</option>
+            <option value="movie">Movie</option>
+            <option value="series">Series</option>
+            <option value="game">Game</option>
+        </select>
+        <select id="sortSelect">
+            <option value="default">Default Sort</option>
+            <option value="yearAsc">Year (Old to New)</option>
+            <option value="yearDesc">Year (New to Old)</option>
+            <option value="titleAsc">Title (A-Z)</option>
+            <option value="titleDesc">Title (Z-A)</option>
+        </select>
+    </div>
     <div id="results">
         <p>Loading movies...</p>
     </div>
